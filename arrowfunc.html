@@ -9,16 +9,39 @@
     
 <script>
 
-function sum(){
-    console.log(arguments);
+let a=5;
+let b=5;
+
+function sum(a,b){
+    console.log(sum);
 }
 
-let sum=(a,b)=> a+b;
+let sum=(a,b)=> a+b;//single
+
+let sum(a,b)=>{
+    let add=a+b+c;
+    return add;
+
+}
 
 const sum=(...rest) =>{
     console.log(rest);
 }
 sum(1,2,3);
+  console.log(sum);
+
+  let result= sum(1,2,3);
+  console.log(result);
+
+  //...spread operator
+
+  let numbers=[1,2,3,4];
+  console.log(numbers);
+  console.log(...numbers);
+
+  let newNumbers=[...numbers,5,6,7];
+  console.log(newNumbers);
+
 </script>
 
 </body>
