@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+
+// 0-0 " " false null undefined
+// "abcdefghijklmnopqrstuvwxyz" {} [] true
+
+let test="eity";
+// if(test){
+//     console.log("its truthy");
+// }
+
+// else{
+//     console.log("its falsy");
+// }
+
+//termary condition:-
+
+test ? console.log("its truthy"):console.log("its falsy");
+
+
+let number=40;
+
+let result=number>=20 && number<=30 ? "passed": "fail";
+console.log(result);
+
+
+let isActive=false;
+console.log(!isActive);
+
+let showUser=() => console.log("showuser");
+let hideUser=() => console.log("hideuser");
+
+// isActive? showUser():hideUser();//true+false
+
+isActive && showUser(); // only true
+isActive || showUser(); // only false
+
+
+
+//type quartion:-
+
+let num="10";
+console.log(typeof num);
+
+//num convertion by using symbol:-
+console.log(+num);
+
+
+//num+string:-
+//when only plus(+)=string:-
+
+let nums=10+"";
+console.log(nums);
+console.log(typeof nums);
+
+
+//when minus(-)=number:-
+let newnums="10";
+console.log(newnums-2);
+console.log(typeof newnums);
+
+</script>
+
+</body>
+</html>
