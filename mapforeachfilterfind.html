@@ -29,7 +29,7 @@ const products=[
 
 ]
 
-//map-return a array,need to write const:-
+//map-return a array,need to write let/const:-
 
 let names=products.map(product=>product.name);
 let result=products.map(product=>product.price);
@@ -40,7 +40,7 @@ console.log(names);
 console.log(brands);
 console.log(result);
 console.log(colors);
-console.log(product);
+console.log(products);
 
 
 //Foreach-use for array of object:-
@@ -48,12 +48,13 @@ console.log(product);
 products.forEach(product=>{
 
 })
+console.log('foreach');
 products.forEach(product=>console.log(product));
 products.forEach(product=>console.log(product.brand));
 products.forEach(product=>console.log(products[2]));
 
 
-// Filter-find specific something,return something:-
+// // Filter-find specific something,return something:-
 
  let specific=products.filter(product=>product.color==="black");
 console.log(specific);
