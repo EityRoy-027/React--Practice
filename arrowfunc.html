@@ -6,14 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    
+<script>
 
-let fName="Eity";
-let lName="Roy";
+function sum(){
+    console.log(arguments);
+}
 
-console.log(`I am ${fName} ${lName}`)
+let sum=(a,b)=> a+b;
 
-
+const sum=(...rest) =>{
+    console.log(rest);
+}
+sum(1,2,3);
 </script>
+
 </body>
 </html>
