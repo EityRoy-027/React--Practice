@@ -9,30 +9,43 @@
     
 <script>
 
+
+
+// normal function
+
+let x=5;
+let y=5;
+function sum(x,y){
+ return x+y;
+
+}
+console.log(sum(x,y));
+
+//arrow function
+
 let a=5;
 let b=5;
+ let sum=(a,b)=> a+b;  
+ console.log("single arrow function");
+ console.log(sum(a, b)); //single arrow function
+ 
 
-// function sum(a,b){
-//     console.log(sum);
-// }
-
-//  let sum=(a,b)=> a+b;  //single
- let sum =(a,b) => {   //multiple
+ let sums =(a,b) => {   //multiple arrow function
     let add=a+b;
     return add;
-    sum(1,2);
-
  }
+ console.log("multiple arrow function");
+ console.log(sums(1,2));
 
 
-// const sum=(...rest) =>{
-//     console.log(rest);
-// }
-// sum(1,2,3);
-//   console.log(sum);
+let summ=(...rest) =>{
+    console.log(rest);
+}
+summ(1,2,3);
+  console.log(summ);
 
-//   let result= sum(1,2,3);
-//   console.log(result);
+  let result= sum(1,2,3);
+  console.log(result);
 
 //...spread operator
 
