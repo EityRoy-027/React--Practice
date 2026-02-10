@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+
+<script>
 
 const products=[
 
@@ -29,41 +30,42 @@ const products=[
 ]
 
 //map-return a array,need to write const:-
-// let names=products.map(product=>product.name);
-// let result=products.map(product=>product.price);
-// let brands=products.map(product=>product.brand);
-// let colors=products.map(product=>product.color);
 
+let names=products.map(product=>product.name);
+let result=products.map(product=>product.price);
+let brands=products.map(product=>product.brand);
+let colors=products.map(product=>product.color);
 
-// console.log(names);
-// console.log(brands);
-// console.log(result);
-// console.log(colors);
-// console.log(product);
+console.log(names);
+console.log(brands);
+console.log(result);
+console.log(colors);
+console.log(product);
 
 
 //Foreach-use for array of object:-
 
-// products.forEach(product=>{
+products.forEach(product=>{
 
-// })
-// products.forEach(product=>console.log(product));
-// products.forEach(product=>console.log(product.brand));
-// products.forEach(product=>console.log(products[2]));
+})
+products.forEach(product=>console.log(product));
+products.forEach(product=>console.log(product.brand));
+products.forEach(product=>console.log(products[2]));
 
 
-//Filter-find specific something,return something:-
-//  let specific=products.filter(product=>product.color==="black");
-// console.log(specific);
+// Filter-find specific something,return something:-
 
-//  let specificcon=products.filter(product=>product.price>=5000);
-//  console.log(specificcon);
+ let specific=products.filter(product=>product.color==="black");
+console.log(specific);
+
+ let specificcon=products.filter(product=>product.price>=5000);
+ console.log(specificcon);
 
 
 //Find-to find 1 object:-
 let specificpro=products.find(product=>product.brand==="samsung");
 console.log(specificpro);
 
-    </script>
+</script>
 </body>
 </html>
