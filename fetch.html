@@ -29,9 +29,9 @@ console.log(planData);
 
 //fetch-chaining method:-
 
-fetch("url")
-.then(res=> res.json())
-.then (data=> console.log(""));
+// fetch("url")
+// .then(res=> res.json())
+// .then (data=> console.log(""));
 
 
 //findout-keys and values:-
@@ -44,9 +44,41 @@ let girl =[
     }
 ]
 
+let keys= Object.keys(girl);
+console.log(keys);
+
+let values= Object.values(girl);
+console.log(values);
 
 
+//to add something to a array:-
 
+const products=[
+
+{
+    name:"redmi",brand:"xiaomi",color:"black",price:"3000"
+},
+{
+ name:"oppo1",brand:"oppo",color:"pink",price:"2000"   
+  
+},
+{
+     name:"samsung1",brand:"samsung",color:"black",price:"4000" 
+},
+
+{
+     name:"apple1",brand:"apple",color:"gold",price:"8000" 
+},
+
+
+]
+
+let newproduct={
+     name:"walton1",brand:"walton",color:"blue",price:"1000" 
+}
+
+let newArray=[...products,newproduct];
+console.log(newArray);
 
 
 </script>
