@@ -63,7 +63,7 @@ const products=[
   
 },
 {
-     name:"samsung1",brand:"samsung",color:"black",price:"4000" 
+     name:"oppo2",brand:"oppo",color:"black",price:"4000" 
 },
 
 {
@@ -79,6 +79,19 @@ let newproduct={
 
 let newArray=[...products,newproduct];
 console.log(newArray);
+
+
+//to remove something from object:-
+
+let remainingproduct=products.filter(p=>p.brand!="oppo")
+console.log(remainingproduct);
+
+
+
+//remove first then adding:-
+
+let newarray2=[...remainingproduct,newproduct];
+console.log(newarray2);
 
 
 </script>
