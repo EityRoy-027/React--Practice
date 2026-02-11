@@ -21,7 +21,9 @@ function App() {
   <Developer name="Salena" country="USA"></Developer>
   <Developer name="Justin" country="Canada"></Developer>
   <Developer name="Taylor" country="USA"></Developer>
-
+   <Food name="Biriyani" place="Handy"></Food>
+   <Food name="Rezela" place="home/restaurant"></Food>
+   <Food name="Roast" place="home/event"></Food>
 
 </>  
   )
@@ -100,6 +102,28 @@ return(
 
   <h3> Developer: {singer.name}</h3>
   <p>country: {singer.country}</p>
+
+</div>
+
+)
+
+}
+
+//destructuring:-
+
+function Food({name, place}){
+
+return(
+
+<div style={{
+    fontSize:"1.2rem",
+  color:"orange",
+  border:"4px solid green",
+  borderRadius:"5px"
+}}>
+
+<h4> Food Name:{name}</h4>
+<p>place:{place}</p>
 
 </div>
 
