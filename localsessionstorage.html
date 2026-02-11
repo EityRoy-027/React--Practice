@@ -11,6 +11,8 @@
 <input id="name" type="text" placeholder="type name"> 
 <input id="email" type="text" placeholder="type email"> 
 <button onclick="HandleAddtoStorage()">Submit</button>   
+<button onclick="HandleClear()">Clear</button>   
+
 
     <script>
 
@@ -22,8 +24,23 @@ window.HandleAddtoStorage = () => {
 let name=document.getElementById("name").value;
 let email=document.getElementById("email").value;
 
+//setitem
 localStorage.setItem(name,email);
+}
 
+let data={name,email};
+console.log(data);
+localStorage.setItem(JSON.stringify(data));
+
+
+//getitem
+let storedItem=localStorage.getItem("eity@gmail.com");
+conosole.log(JSON.parse(storedItem));
+
+//clear:-
+
+let HandleClear =() => {
+    localStorage.clear();
 }
 
 
