@@ -13,7 +13,15 @@ function App() {
     
   <>
 
+  <Basics></Basics>
   <Person></Person>
+  <Name></Name>
+  <Age></Age>
+  <Learn></Learn>
+  <Developer name="Salena" country="USA"></Developer>
+  <Developer name="Justin" country="Canada"></Developer>
+  <Developer name="Taylor" country="USA"></Developer>
+
 
 </>  
   )
@@ -27,5 +35,76 @@ function Person(){
   )
 }
 
+function Basics(){
+  const html="HTML";
+  const css="CSS";
+  const js="JS";
+
+  return(
+    <h2>Basics need to know before start React:{html}, {css}, {js}.</h2>
+  )
+}
+
+//css first method
+
+function Name(){
+
+return (
+  <div className='name'>My name is-Eity</div>
+)
+
+}
+
+//css second method
+const ageStyle={
+  fontSize:"bold",
+  color:"red",
+}
+function Age(){
+  return(
+    <p style={ageStyle}>10 years old</p>
+  )
+}
+
+//css third method
+function Learn(){
+  <h3>Web Development</h3>
+
+  return(
+    <div style={{
+      border:"4px solid pink",
+      borderRadius:"5px"
+    }}>
+
+  <h3>Web Development</h3>
+
+    </div>
+  )
+}
+
+//specific
+
+function Developer(singer){
+
+return(
+
+<div style={{
+  fontSize:"1.2rem",
+  color:"marron",
+  border:"4px solid orange",
+  borderRadius:"5px"
+
+  
+
+}}>
+
+  <h3> Developer: {singer.name}</h3>
+  <p>country: {singer.country}</p>
+
+</div>
+
+)
+
+}
 
 export default App
