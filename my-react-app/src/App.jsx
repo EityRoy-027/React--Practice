@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-
+import List from './Destructure';
  
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     
   <>
 
-  <Basics></Basics>
+  {/* <Basics></Basics>
   <Person></Person>
   <Name></Name>
   <Age></Age>
@@ -23,112 +23,134 @@ function App() {
   <Developer name="Taylor" country="USA"></Developer>
    <Food name="Biriyani" place="Handy"></Food>
    <Food name="Rezela" place="home/restaurant"></Food>
-   <Food name="Roast" place="home/event"></Food>
+   <Food name="Roast" place="home/event"></Food> */}
+   <List></List>
+
+<List task="react app" isDone={true} month="February"></List>
+<List task="HTML completed" isDone={true} month="May"></List>
+<List task="CSS completed" isDone={true} month="June"></List>
+<List task="JS completed" isDone={true} month="November"></List>
+<List task="React completed" isDone={false} month="Starting from February 10, 2026."> </List>
+
+
 
 </>  
   )
 }
 
-function Person(){
+// function Person(){
 
-  const date="11/2/20026";
-  return(
-    <p>This is my first React Code:{date}</p>
-  )
-}
+//   const date="11/2/20026";
+//   return(
+//     <p>This is my first React Code:{date}</p>
+//   )
+// }
 
-function Basics(){
-  const html="HTML";
-  const css="CSS";
-  const js="JS";
+// function Basics(){
+//   const html="HTML";
+//   const css="CSS";
+//   const js="JS";
 
-  return(
-    <h2>Basics need to know before start React:{html}, {css}, {js}.</h2>
-  )
-}
+//   return(
+//     <h2>Basics need to know before start React:{html}, {css}, {js}.</h2>
+//   )
+// }
 
-//css first method
+// //css first method
 
-function Name(){
+// function Name(){
 
-return (
-  <div className='name'>My name is-Eity</div>
-)
+// return (
+//   <div className='name'>My name is-Eity</div>
+// )
 
-}
+// }
 
-//css second method
-const ageStyle={
-  fontSize:"bold",
-  color:"red",
-}
-function Age(){
-  return(
-    <p style={ageStyle}>10 years old</p>
-  )
-}
+// //css second method
+// const ageStyle={
+//   fontSize:"bold",
+//   color:"red",
+//   border:"4px solid pink",
+//   borderRadius:"5px"
+// }
+// function Age(){
+//   return(
+//     <p style={ageStyle}>10 years old</p>
+//   )
+// }
 
-//css third method
-function Learn(){
-  <h3>Web Development</h3>
+// //css third method
+// function Learn(){
+//   <h3>Web Development</h3>
 
-  return(
-    <div style={{
-      border:"4px solid pink",
-      borderRadius:"5px"
-    }}>
+//   return(
+//     <div style={{
+//       border:"4px solid pink",
+//       borderRadius:"5px"
+//     }}>
 
-  <h3>Web Development</h3>
+//   <h3>Web Development</h3>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-//specific
+// //specific
 
-function Developer(singer){
+// function Developer(props){
 
-return(
+// return(
 
-<div style={{
-  fontSize:"1.2rem",
-  color:"marron",
-  border:"4px solid orange",
-  borderRadius:"5px"
+// <div style={{
+//   fontSize:"1.2rem",
+//   color:"marron",
+//   border:"4px solid orange",
+//   borderRadius:"5px"
 
   
 
-}}>
+// }}>
 
-  <h3> Developer: {singer.name}</h3>
-  <p>country: {singer.country}</p>
+//   <h3> Developer: {props.name}</h3>
+//   <p>country: {props.country}</p>
 
-</div>
+// </div>
 
-)
+// )
 
-}
+// }
 
-//destructuring:-
+// //destructuring:-
 
-function Food({name, place}){
+// function Food({name, place}){
 
-return(
+// return(
 
-<div style={{
-    fontSize:"1.2rem",
-  color:"orange",
-  border:"4px solid green",
-  borderRadius:"5px"
-}}>
+// <div style={{
+//     fontSize:"1.2rem",
+//   color:"orange",
+//   border:"4px solid green",
+//   borderRadius:"5px"
+// }}>
 
-<h4> Food Name:{name}</h4>
-<p>place:{place}</p>
+// <h4> Food Name:{name}</h4>
+// <p>place:{place}</p>
 
-</div>
+// </div>
 
-)
+// )
 
-}
+// }
+
+
+// //practice-1:-
+// function Status(){
+// const online="green";
+// const offline="red";
+// if(online==true){
+//   console.log("The user is Online");
+// }
+
+// }
 
 export default App
