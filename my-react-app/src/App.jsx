@@ -44,7 +44,7 @@ function App() {
 <Singer></Singer> */}
 
 {/* part1summary.jsx */}
-<Libarary book={book}></Libarary>
+<Libarary ></Libarary>
 
 
 </>  
